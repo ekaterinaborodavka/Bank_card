@@ -1,0 +1,50 @@
+//compress:true;
+@import 'vars';
+@import 'mixins';
+
+.bank_form{
+    .flex;
+    .margin;
+    width: 80%;
+}
+
+.bank_form_wrapper{
+    .flex;
+    width: 40%;
+    margin: auto;
+    margin-top: 5%;
+    .border(grey);
+    .padding;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.bank_form_input{
+    width: 100%;
+    .margin;
+    .padding;
+}
+
+.data{
+    width: 45%;
+}
+
+.bank_form_button{
+    width: 15%;
+    .border(black);
+    .margin;
+    .bg(@button_color);
+    color: @button_text_color;
+}
+
+.bank_form_button:hover{
+    .bg(@button_color_hov);
+}
+
+.wrong{
+    .border(red);
+}
+
+.bank_form_success{
+    font-size: 1.5rem;
+    color: @button_success;
+}
